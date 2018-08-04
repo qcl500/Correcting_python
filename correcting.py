@@ -26,7 +26,8 @@ class CorrectDlg(QtGui.QDialog, ui_correct.Ui_Dialog):
         self.connect(self.pushButton_2,QtCore.SIGNAL('clicked()'),self.add_data)
         self.connect(self.pushButton_3,QtCore.SIGNAL('clicked()'),self.del_data)
         self.connect(self.pushButton_4,QtCore.SIGNAL('clicked()'),self.done_data)
-        self.connect(self.pushButton_5,QtCore.SIGNAL('clicked()'),self.plot_data)        
+        self.connect(self.pushButton_5,QtCore.SIGNAL('clicked()'),self.plot_data)     
+        self.connect(self.radioButton,QtCore.SIGNAL('clicked()'),self.vplot_set)
 
         self.tableWidget.setHorizontalHeaderLabels(['depth(cm)','data','age(ka)'])
 
@@ -373,6 +374,13 @@ class CorrectDlg(QtGui.QDialog, ui_correct.Ui_Dialog):
         curve.setData(kout,y1)
         curve.attach(self.qwtPlot)
         self.qwtPlot.replot()
+        
+    def vplot_set(self):        
+        if self.radioButton.isChecked():
+            print u'cancel the function of new paint window'
+        else:
+            print u'cancel the function of new paint window'
+            pass
         
     
 
