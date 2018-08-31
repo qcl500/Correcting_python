@@ -19,6 +19,8 @@ https://github.com/qcl500/Correcting_v3
 
 注意：使用前请检查是否已导入必须的库文件
 
+2018-08-31: 发布Correcting_python3.6_v0.1-alpha, 见release, 基于Spyder base on Anaconda3(python3.6)开发
+
 特别声明：
 
 本软件(及其源代码)仅作为原Correcting_v3(matlab)的移植版本,基于python2.7.9开发
